@@ -21,6 +21,8 @@ A landing page foi projetada para oferecer: <br>
 
 ## Preview
 <img src="src/imagens/designPageL.gif">
+<img src="src/imagens/tablet.png">
+<img src="src/imagens/telefone.png">
 
 ## 🔧 Como Executar o Projeto
 
