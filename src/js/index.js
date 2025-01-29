@@ -21,4 +21,11 @@ const btn = document.querySelector(".btn").addEventListener('click', ()=>{
     
     btn.classList.remove('animacao');
     btn.classList.add('clicado');
-})
+});
+
+const hamburguer = document.querySelector('.hamburguer');
+let navList = document.querySelector('.nav-list'); 
+
+hamburguer.addEventListener('click', ()=>{
+    navList.classList.toggle('ativar');
+});

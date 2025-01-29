@@ -73,7 +73,56 @@
 }
 
 
-@media (min-width: 717px){
+@media (min-width: 717px) and (max-width: 1025px){
+    .cabecalho{
+        height: 12vh;
+        position: relative;
+    }
+
+    .logo img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 5em;
+    }
+
+    .carrinho .bx{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        font-size: 1.3em;
+    }
+
+    .hamburguer{
+        display: block;
+        position: absolute;
+        left: 1em;
+        z-index: 1;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        justify-content: space-around;
+        height: 100vh;
+        width: 50vw;
+        background: #120320;
+        opacity: 0;
+        transition: all ease 0.5s;
+    }
+
+    .nav-list.ativar{
+        opacity: 1;
+        transition: all ease 0.5s;
+    }
+
+    .informacao img{
+       margin: 1em;
+    }
+
     .footer-card{
       margin: 1em;
     }

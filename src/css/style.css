@@ -28,6 +28,17 @@ body{
     margin: 0.5em;
 }
 
+.hamburguer{
+    display: none;
+}
+
+.linha{
+    margin: 0.2em;
+    width: 3em;
+    height: 0.3em;
+    background: #7707f0;
+}
+
 nav ul{
     display: flex;
     padding: auto;
