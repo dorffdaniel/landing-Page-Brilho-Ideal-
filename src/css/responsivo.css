@@ -4,10 +4,46 @@
         flex-direction: column;
         background: #120320;
         padding: 10px;
+        height: 8vh;
+        position: relative;
     }
 
     .logo img{
         display: none;
+    }
+
+    .carrinho .bx{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        font-size: 1.3em;
+    }
+
+    .hamburguer{
+        display: block;
+        position: absolute;
+        left: 1em;
+        z-index: 2;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        justify-content: space-around;
+        height: 100vh;
+        width: 50vw;
+        background: #120320;
+        opacity: 0;
+        transition: all ease 0.5s;
+        z-index: 1;
+    }
+
+    .nav-list.ativar{
+        opacity: 1;
+        transition: all ease 0.5s;
     }
 
     .carrinho{
@@ -103,12 +139,13 @@
     .nav-list{
         display: flex;
         flex-direction: column;
+        align-items: center;
         position: absolute;
         left: 0;
         top: 0;
         justify-content: space-around;
-        height: 100vh;
-        width: 50vw;
+        height: 80vh;
+        width: 40vw;
         background: #120320;
         opacity: 0;
         transition: all ease 0.5s;
@@ -121,7 +158,14 @@
 
     .informacao img{
        margin: 1em;
+       height: 25em;
+       object-fit: cover;
     }
+
+    .cards-novidades{
+        margin: 0.7em;
+    }
+
 
     .footer-card{
       margin: 1em;
