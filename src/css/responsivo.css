@@ -26,6 +26,25 @@
         z-index: 2;
     }
 
+    .hamburguer.ativo .linha:nth-child(1){
+        transform: rotate(45deg);
+        position: absolute;
+        top: 50%;
+        background: #fff;
+        transition: all ease 0.5s;
+    }
+
+    .hamburguer.ativo .linha:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.ativo .linha:nth-child(3){
+        transform: rotate(-45deg);
+        top: 50%;
+        background: #fff;
+        transition: all ease 0.5s;
+    }
+
     .nav-list{
         display: flex;
         flex-direction: column;
@@ -71,6 +90,12 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+
+    .informacao-conteudo h1{
+        font-size: calc(1vw + 0.9em);
+        text-align: center;
+        width: 50em;
     }
 
     .cards-novidades{
@@ -135,6 +160,25 @@
         left: 1em;
         z-index: 1;
     }
+
+    .hamburguer.ativo .linha:nth-child(1){
+        transform: rotate(45deg);
+        position: absolute;
+        top: 50%;
+        background: #fff;
+        transition: all ease 0.5s;
+    }
+
+    .hamburguer.ativo .linha:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.ativo .linha:nth-child(3){
+        transform: rotate(-45deg);
+        top: 50%;
+        background: #fff;
+        transition: all ease 0.5s;
+    }  
 
     .nav-list{
         display: flex;
