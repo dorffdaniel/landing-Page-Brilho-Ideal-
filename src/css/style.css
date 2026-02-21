@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,13 +6,13 @@
     list-style: none;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +20,7 @@ body{
     flex-wrap: wrap;
 }
 
-.logo img{
+.logo img {
     width: 150px;
     height: 100px;
     object-fit: cover;
@@ -28,37 +28,37 @@ body{
     margin: 0.5em;
 }
 
-.hamburguer{
+.hamburguer {
     display: none;
 }
 
-.linha{
+.linha {
     margin: 0.2em;
     width: 3em;
     height: 0.3em;
     background: #7707f0;
 }
 
-nav ul{
+nav ul {
     display: flex;
     padding: auto;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     font-size: min(2em, calc(0.7em + 1vw));
     margin: 0 2em;
     border-bottom: transparent 3px solid;
     transition: all ease-in 0.4s;
-    
+
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     border-bottom: 3px solid #5b09a8;
     padding-bottom: 5px;
 }
 
-.carrinho{
+.carrinho {
     font-size: calc(1em + 1vw);
     margin-right: 50px;
     color: #fff;
@@ -66,14 +66,14 @@ nav ul li a:hover{
 }
 
 
-.container{
+.container {
     background: #695183;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.informacao{
+.informacao {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -81,7 +81,7 @@ nav ul li a:hover{
     height: 700px;
 }
 
-.informacao img{
+.informacao img {
     width: 50em;
     height: 40em;
     border-radius: 15px;
@@ -89,7 +89,7 @@ nav ul li a:hover{
     margin-top: 1em;
 }
 
-.informacao-conteudo{
+.informacao-conteudo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,20 +98,20 @@ nav ul li a:hover{
     padding: 15px;
 }
 
-.informacao-conteudo h1{
+.informacao-conteudo h1 {
     color: #fff;
     font-size: calc(2.5em + 1vw);
     width: 400px;
 }
 
-.informacao-conteudo p{
+.informacao-conteudo p {
     font-size: calc(0.5em + 1vw);
     color: #fff;
 }
 
-.informacao-conteudo .btn{
+.informacao-conteudo .btn {
     width: 6em;
-    height: 1.5em; 
+    height: 1.5em;
     border-radius: 15px;
     border: none;
     cursor: pointer;
@@ -119,38 +119,38 @@ nav ul li a:hover{
     transition: all ease 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     transition: all ease 0.5s;
     background-color: #120320;
     color: #fff;
 }
 
-.btn.animacao{
+.btn.animacao {
     animation: vibrar infinite 0.8s;
 }
 
-.btn .clicado{
+.btn .clicado {
     animation: none;
 }
 
 
 
-@keyframes vibrar{
-    0%{
+@keyframes vibrar {
+    0% {
         transform: scale(1);
     }
 
-    50%{
+    50% {
         transform: scale(1.1);
     }
 
-    100%{
+    100% {
         transform: scale(1);
     }
 }
 
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -158,44 +158,52 @@ nav ul li a:hover{
     padding: 18px;
 }
 
-.ativarcards{
+.ativarcards {
     transition: all ease-in-out 1s;
     opacity: 1;
 }
 
 
-.cards-novidades{
+.cards-novidades {
     display: flex;
     flex-direction: column;
     gap: 20px;
     border: 2px solid #fff;
     background: #fff;
     transition: all ease-in-out 0.7s;
+    padding: .2rem;
 }
 
- .cards-novidades:hover{
-    transform: scale(1.1);
-} 
-
-.cards-novidades img{
+.cards-novidades img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     cursor: pointer;
 }
 
-.carrinho-card{
+.carrinho-card {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-.carrinho-card i{
+.carrinho-card button {
+    background: #7707f0;
+    color: #fff;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.carrinho-card i {
     margin-right: 10px;
     font-size: calc(0.3em + 1vw);
     cursor: pointer;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-around;
     background: #120320;
@@ -204,32 +212,34 @@ nav ul li a:hover{
     flex-wrap: wrap;
 }
 
-.footer-card{
+.footer-card {
     display: flex;
     flex-direction: column;
     color: #fff;
 }
 
-.footer-card h2{
+.footer-card h2 {
     font-size: min(2em, calc(0.5em + 1vw));
     margin-bottom: 15px;
 }
 
-.footer-card p{
+.footer-card p {
     font-size: calc(0.5em + 1vw);
     padding: 5px;
 }
-.redes-sociais{
+
+.redes-sociais {
     display: flex;
     gap: 20px;
     padding: 10px;
 }
-.redes-sociais a{
+
+.redes-sociais a {
     font-size: min(2em, calc(1em + 1vw));
     transition: all ease-in-out 0.4s;
 }
 
-.redes-sociais a:hover{
+.redes-sociais a:hover {
     color: #fff;
     transform: scale(1.2, 1.2);
 }

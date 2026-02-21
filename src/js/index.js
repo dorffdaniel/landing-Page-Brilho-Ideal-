@@ -51,7 +51,8 @@ async function pegarProdutos() {
                     <p>${el.nome}</p>
             </div >
         <div class="carrinho-card">
-            <i class='bx bx-cart-download'></i>
+            <button>  <i class='bx bx-cart-download'></i> Adicionar</button>
+           
         </div>
         </div > `
     });
