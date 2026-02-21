@@ -1,6 +1,9 @@
 import Routes from 'express';
-import { pegarProdutos } from '../controllers/itemsControllers'
+import { pegarProdutos } from '../controllers/itemsControllers.js'
 
 
 const routes = Routes()
-routes.get('/', pegarProdutos); 
+routes.get('/produtos', pegarProdutos);
+
+
+export default routes;

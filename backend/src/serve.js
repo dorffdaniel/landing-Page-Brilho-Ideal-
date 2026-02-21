@@ -1,14 +1,18 @@
 import express from 'express';
-import items from './routes/itemsRoutes'
+import cors from 'cors';
+import items from './routes/itemsRoutes.js'
 const app = express();
 
+const porta = 8000;
 
-// vou so refrenciar a rota com o use 
-app.use(items);
+app.use(cors());
 app.use(express.json());
+// vou so refrenciar a rota com o use 
+app.use("/items", items);
 
 
 
-app.listen(8000, () => {
-    console.log("api rodando na porta 8000");
+
+app.listen(porta, () => {
+    console.log(`servidor rodando: http://localhost:${porta}/`)
 })
